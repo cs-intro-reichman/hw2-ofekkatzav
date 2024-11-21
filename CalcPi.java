@@ -6,13 +6,12 @@ public class CalcPi {
 	double sumPositive = 0;
 	double sumNegative = 0;
 	
-	for(double i=5;i<=numOfCalculation*2;i=i+4){// 1/5 + 1/9 + 1/13 + 1/17 + 1/21
+	for(double i=5;i<=numOfCalculation*2;i=i+4){
 		sumPositive =sumPositive + 1/i;
 	}
-	for(double i=3;i<=numOfCalculation*2;i=i+4){// 1/3 + 1/7 + 1/11 + 1/15 + 1/19 
+	for(double i=3;i<=numOfCalculation*2;i=i+4){
 		sumNegative = sumNegative + 1/i;
 	}
-
 	System.out.println("pi according to Java: " + Math.PI);
 	System.out.println("pi, approximated: " + 4*(1 + (sumPositive - sumNegative)));
 
