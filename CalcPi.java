@@ -7,11 +7,11 @@ public class CalcPi {
 
 	
 	for (int i = 0; i < numOfCalculation; i++) {
-		double term = 1.0 / (2 * i + 1); // Current term
+		double term = 1.0 / (2 * i + 1); 
 		if (i % 2 == 0) 
-			piAppro += term; // Add for even-indexed terms
+			piAppro += term; 
 		else 
-			piAppro -= term; // Subtract for odd-indexed terms
+			piAppro -= term; 
 		
 	}
 	

@@ -6,16 +6,18 @@ public class Cheers {
        
 
         for(int i=0; i<cheerSpell.length(); i++ ){
-                if("aefhilmnorsx".indexOf(cheerSpell.charAt(i)) >= 0 || "AEFHILMNORSX".indexOf(cheerSpell.charAt(i)) >= 0 )// if some of the chars exist in cheerspell(i)
+                if("aefhilmnorsx".indexOf(cheerSpell.charAt(i)) >= 0 || "AEFHILMNORSX".indexOf(cheerSpell.charAt(i)) >= 0 ){// if some of the chars exist in cheerspell(i)
                 System.out.println("Give me an "+Character.toUpperCase(cheerSpell.charAt(i))+": "+Character.toUpperCase(cheerSpell.charAt(i))+"!");
-                else
+                }
+                else{
                 System.out.println("Give me a  "+Character.toUpperCase(cheerSpell.charAt(i))+": "+Character.toUpperCase(cheerSpell.charAt(i))+"!");
+                }       
         }
-                System.out.println("What does that spell?");
-
+        System.out.println("What does that spell?");
         for(int i=0; i<numOfCheering;i++){
-                System.out.println(cheerSpell + "!!!");
+                System.out.println(cheerSpell.toUpperCase() + "!!!");
         }
 }
         
 }
+
