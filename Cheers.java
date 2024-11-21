@@ -7,9 +7,9 @@ public class Cheers {
 
         for(int i=0; i<cheerSpell.length(); i++ ){
                 if("aefhilmnorsx".indexOf(cheerSpell.charAt(i)) >= 0 || "AEFHILMNORSX".indexOf(cheerSpell.charAt(i)) >= 0 )// if some of the chars exist in cheerspell(i)
-                System.out.println("Give me an "+cheerSpell.charAt(i)+": "+cheerSpell.charAt(i)+"!");
+                System.out.println("Give me an "+Character.toUpperCase(cheerSpell.charAt(i))+": "+Character.toUpperCase(cheerSpell.charAt(i))+"!");
                 else
-                System.out.println("Give me a "+cheerSpell.charAt(i)+": "+cheerSpell.charAt(i)+"!");
+                System.out.println("Give me a  "+Character.toUpperCase(cheerSpell.charAt(i))+": "+Character.toUpperCase(cheerSpell.charAt(i))+"!");
         }
                 System.out.println("What does that spell?");
 

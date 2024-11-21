@@ -3,17 +3,22 @@ public class CalcPi {
 	public static void main(String [] args) { 
 	
 	int numOfCalculation = Integer.parseInt(args[0]);	
-	double sumPositive = 0;
-	double sumNegative = 0;
+	double piAppro = 0.0;
+
 	
-	for(double i=5;i<=numOfCalculation*2;i=i+4){
-		sumPositive =sumPositive + 1/i;
+	for (int i = 0; i < numOfCalculation; i++) {
+		double term = 1.0 / (2 * i + 1); // Current term
+		if (i % 2 == 0) 
+			piAppro += term; // Add for even-indexed terms
+		else 
+			piAppro -= term; // Subtract for odd-indexed terms
+		
 	}
-	for(double i=3;i<=numOfCalculation*2;i=i+4){
-		sumNegative = sumNegative + 1/i;
-	}
+	
+	piAppro*=4;
 	System.out.println("pi according to Java: " + Math.PI);
-	System.out.println("pi, approximated: " + 4*(1 + (sumPositive - sumNegative)));
+	System.out.println("pi, approximated: " + piAppro);
 
 	}
 }
+
