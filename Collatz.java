@@ -28,7 +28,8 @@ public class Collatz {
 	System.out.println();
 	}
 }
-else if(mode.equals("c"))
+System.out.println("Every one of the first "+seed+" hailstone sequences reached 1.");
+if(mode.equals("c"))
 System.out.println("Every one of the first "+seed+" hailstone sequences reached 1.");
 }
 }
